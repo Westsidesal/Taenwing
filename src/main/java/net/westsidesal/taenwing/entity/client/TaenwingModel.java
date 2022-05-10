@@ -22,7 +22,7 @@ public class TaenwingModel extends AnimatedGeoModel<TaenwingEntity> {
 
     @Override
     public Identifier getAnimationFileLocation(TaenwingEntity animatable) {
-        return new Identifier(Taenwing.MOD_ID, "geo/taenwing.animation.json");
+        return new Identifier(Taenwing.MOD_ID, "animations/taenwing.animation.json");
     }
 
     @SuppressWarnings({ "unchecked"})

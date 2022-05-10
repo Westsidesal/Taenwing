@@ -39,7 +39,7 @@ public class TaenwingEntity extends AnimalEntity implements IAnimatable {
                 .add(EntityAttributes.GENERIC_MAX_HEALTH, 60.0D)
                 .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 8.0f)
                 .add(EntityAttributes.GENERIC_ATTACK_SPEED, 2.0f)
-                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 1.5f);
+                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.6f);
     }
 
     protected void initGoals() {
@@ -53,10 +53,12 @@ public class TaenwingEntity extends AnimalEntity implements IAnimatable {
 
     private <E extends IAnimatable> PlayState predicate(AnimationEvent <E> event) {
         if (event.isMoving()) {
-            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.taenwing.flight", true));
+            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.taenwing.walk", true));
         return PlayState.CONTINUE;
         }
-        return null;
+
+        event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.taenwing.idle", true));
+        return PlayState.CONTINUE;
     }
 
     @Override

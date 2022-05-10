@@ -9,6 +9,7 @@ import software.bernie.geckolib3.model.AnimatedGeoModel;
 import software.bernie.geckolib3.model.provider.data.EntityModelData;
 
 public class TaenwingModel extends AnimatedGeoModel<TaenwingEntity> {
+
     @Override
     public Identifier getModelLocation(TaenwingEntity object) {
         return new Identifier(Taenwing.MOD_ID, "geo/taenwing.geo.json");
@@ -24,7 +25,7 @@ public class TaenwingModel extends AnimatedGeoModel<TaenwingEntity> {
         return new Identifier(Taenwing.MOD_ID, "geo/taenwing.animation.json");
     }
 
-    @SuppressWarnings({ "unchecked", "rawtypes" })
+    @SuppressWarnings({ "unchecked"})
     @Override
     public void setLivingAnimations(TaenwingEntity entity, Integer uniqueID, AnimationEvent customPredicate) {
         super.setLivingAnimations(entity, uniqueID, customPredicate);

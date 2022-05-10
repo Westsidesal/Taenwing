@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "net.westsidesal.taenwing.Taenwing"
+    ],
+    "client": [
+      "net.westsidesal.taenwing.TaenwingClient"
     ]
   },
   "mixins": [

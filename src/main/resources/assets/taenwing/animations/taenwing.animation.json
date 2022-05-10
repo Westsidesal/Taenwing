@@ -619,6 +619,81 @@
 					}
 				}
 			}
+		},
+		"idle": {
+			"loop": true,
+			"animation_length": 1.56,
+			"bones": {
+				"bone": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.4": {
+							"vector": [-2.5, 0, 0]
+						},
+						"0.92": {
+							"vector": [2.5, 0, 0]
+						},
+						"1.48": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"Wingleft": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.52": {
+							"vector": [0, 0, 10]
+						},
+						"1.0": {
+							"vector": [0, 0, 5]
+						},
+						"1.52": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"Wingright": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.52": {
+							"vector": [0, 0, -10]
+						},
+						"1.0": {
+							"vector": [0, 0, -5]
+						},
+						"1.52": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"wingright2": {
+					"rotation": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"Tail1": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.52": {
+							"vector": [-5, -5, 0]
+						},
+						"1.04": {
+							"vector": [2.49903, 4.91489, 1.30355]
+						},
+						"1.52": {
+							"vector": [0, 0, 0]
+						}
+					}
+				}
+			}
 		}
 	},
 	"geckolib_format_version": 2

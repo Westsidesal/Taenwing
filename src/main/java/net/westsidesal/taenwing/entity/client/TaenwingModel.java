@@ -1,8 +1,8 @@
 package net.westsidesal.taenwing.entity.client;
 
 import net.westsidesal.taenwing.Taenwing;
-import net.westsidesal.taenwing.entity.custom.TaenwingEntity;
 import net.minecraft.util.Identifier;
+import net.westsidesal.taenwing.entity.custom.TaenwingEntity;
 import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
 import software.bernie.geckolib3.core.processor.IBone;
 import software.bernie.geckolib3.model.AnimatedGeoModel;

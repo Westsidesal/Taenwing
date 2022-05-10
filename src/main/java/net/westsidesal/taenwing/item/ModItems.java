@@ -2,7 +2,7 @@ package net.westsidesal.taenwing.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.westsidesal.taenwing.Taenwing;
-import net.westsidesal.taenwing.entity.ModEntities;
+import net.westsidesal.taenwing.Declarar;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.SpawnEggItem;
@@ -11,9 +11,9 @@ import net.minecraft.util.registry.Registry;
 
 public class ModItems {
 
-    public static final Item TAENWING_EGG = new SpawnEggItem(ModEntities.TAENWING, 11141120, 5592575, new FabricItemSettings().group(ItemGroup.MISC));
+    public static final Item TAENWING_EGG = new SpawnEggItem(Declarar.TAENWING, 11141120, 5592575, new FabricItemSettings().group(ItemGroup.MISC));
 
-    ;private static Item registerItem(String name, Item item) {
+    private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(Taenwing.MOD_ID, name), item);
     }
 

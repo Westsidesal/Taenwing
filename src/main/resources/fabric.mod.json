@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "taenwing",
+  "version": "${version}",
+
+  "name": "The Taenwing",
+  "description": "This mod contains a mob called the Taenwing!",
+  "authors": [
+    "Westsidesal!"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/taenwing/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.westsidesal.taenwing.Taenwing"
+    ]
+  },
+  "mixins": [
+    "taenwing.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "~1.18.2",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

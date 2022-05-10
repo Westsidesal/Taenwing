@@ -22,7 +22,7 @@ public class Taenwing implements ModInitializer {
 
 		FabricDefaultAttributeRegistry.register(Declarar.TAENWING, AnimalEntity.createLivingAttributes()
 				.add(EntityAttributes.GENERIC_MAX_HEALTH, 60)
-				.add(EntityAttributes.GENERIC_MOVEMENT_SPEED,0.6)
+				.add(EntityAttributes.GENERIC_MOVEMENT_SPEED,0.4)
 		);
 		Registry.register(Registry.ITEM,Declarar.getTaenwingId("spawn_egg"),Declarar.TAENWING_EGG);
 		ModRegistries.registerModStuffs();

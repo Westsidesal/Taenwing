@@ -11,7 +11,7 @@ import net.minecraft.util.registry.Registry;
 
 public class ModItems {
 
-    public static final Item TAENWING_EGG = new SpawnEggItem(Declarar.TAENWING, 11141120, 5592575, new FabricItemSettings().group(ItemGroup.MISC));
+    public static final Item TAENWING_EGG = new SpawnEggItem(Declarar.TAENWING, 0x948e8d, 0x3b3635, new FabricItemSettings().group(ItemGroup.MISC));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(Taenwing.MOD_ID, name), item);

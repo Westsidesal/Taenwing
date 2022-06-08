@@ -23,8 +23,7 @@ public class Declarar {
             Registry.ENTITY_TYPE, new Identifier(Taenwing.MOD_ID, "taenwing"),
             FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, TaenwingEntity::new).dimensions(EntityDimensions.fixed((float) 1.4, (float) 0.5)).build());
 
-    public static final Item TAENWING_EGG = new SpawnEggItem(Declarar.TAENWING, 11141120, 5592575, new FabricItemSettings().group(ItemGroup.MISC));
-
-
+    public static final Item TAENWING_EGG = new SpawnEggItem(Declarar.TAENWING, 0x948e8d, 0x3b3635, new FabricItemSettings().group(ItemGroup.MISC));
+    
 
 }
